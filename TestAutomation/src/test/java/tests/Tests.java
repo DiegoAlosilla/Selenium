@@ -21,9 +21,12 @@ public class Tests {
 	@BeforeMethod
 	public void setUp() {
 
+		OperaOptions options = new OperaOptions();
+		options.setBinary(new File("C:\\Program Files\\Opera\\60.0.3255.109_1\\opera.exe"));
+
 		DesiredCapabilities caps = new DesiredCapabilities();
 		System.setProperty("webdriver.opera.driver", "Drivers/operadriver.exe");
-		driver = new OperaDriver();
+		driver = new OperaDriver(options);
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.facebook.com");
 		try {
