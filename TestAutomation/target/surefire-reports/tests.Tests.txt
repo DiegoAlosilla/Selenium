@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: tests.Tests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.544 s <<< FAILURE! - in tests.Tests
+setUp(tests.Tests)  Time elapsed: 0.291 s  <<< FAILURE!
+java.lang.IllegalArgumentException: C:\path\to\extension.crx does not exist
+	at tests.Tests.setUp(Tests.java:25)
+
